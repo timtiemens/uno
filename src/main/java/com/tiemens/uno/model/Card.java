@@ -1,5 +1,7 @@
 package com.tiemens.uno.model;
 
+import java.util.Objects;
+
 /*   starting at random(42), with 4 players:
    Player 4 plays BLUE_7
    Player 4 wins!
@@ -57,4 +59,26 @@ public class Card {
             return color + "_" + type;
         }
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, number, type);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        Card other = (Card) obj;
+        return color == other.color && number == other.number && type == other.type;
+    }
+
+
 }

@@ -22,31 +22,19 @@ public class StringBufferPrintStream extends PrintStream {
         mybaos.reset();
     }
 
+    public String getString() {
+        this.flush();
+        // Convert the ByteArrayOutputStream content to a String
+        String resultString = mybaos.toString(StandardCharsets.UTF_8);
+        return resultString;
+    }
+
     public static StringBufferPrintStream getPrintStream() {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         try {
             StringBufferPrintStream ret = new StringBufferPrintStream(baos);
             return ret;
         } catch (UnsupportedEncodingException e) {
-            return null;
-        }
-    }
-    private static PrintStream getPrintStream2() {
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        // Use try-with-resources for automatic closing (optional but good practice for
-        // PrintStream)
-        try (PrintStream ps = new PrintStream(baos, true, StandardCharsets.UTF_8.name())) {
-
-            // 3. Write data to the PrintStream
-//         ps.println("Hello, World!");
-//          ps.print("This is some more text.");
-            // Ensure all data is flushed to the underlying buffer
-            // ps.flush();
-            // 4. Convert the ByteArrayOutputStream content to a String
-//     String resultString = baos.toString(StandardCharsets.UTF_8);
-            return ps;
-        } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
     }

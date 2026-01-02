@@ -16,21 +16,25 @@ public class UnoGame {
     private Card topCard;
     private int currentPlayerIndex;
     private Direction direction; // 1 for clockwise, -1 for counter-clockwise
+    private final int randomSeed;
     private Random random;
     private boolean gameOver;
     private Player winner;
     private int roundNumber;
+    private String reason; // reason the game ended
 
-    public UnoGame(Random random, PrintStream out) {
+    public UnoGame(int randomSeed, PrintStream out) {
         if (out == null) {
             out = StringBufferPrintStream.NO_OP_PRINTSTREAM;
         }
+        this.randomSeed = randomSeed;
+        this.random = new Random(randomSeed);
         this.players = new ArrayList<>();
         this.deck = new ArrayList<>();
-        this.random = random;
         this.direction = Direction.CLOCKWISE;
         this.gameOver = false;
         this.roundNumber = 0;
+        this.reason = "";
         initializePlayers();
         initializeDeck();
         shuffleDeck();
@@ -69,6 +73,7 @@ public class UnoGame {
             deck.add(new Card(Card.Color.WILD, Card.Type.WILD, 0));
             deck.add(new Card(Card.Color.WILD, Card.Type.WILD_DRAW_FOUR, 0));
         }
+        // System.out.println("Deck size in init is " + deck.size()); // 108
     }
 
     private void shuffleDeck() {
@@ -76,11 +81,13 @@ public class UnoGame {
     }
 
     private void dealCards() {
+        System.out.println("enter deal, deck size is " + deck.size()); // 108
         for (int i = 0; i < 7; i++) {
             for (Player player : players) {
                 player.drawCard(deck.remove(deck.size() - 1));
             }
         }
+        // System.out.println("Deck size after deal is " + deck.size()); // 80
     }
 
     private void placeFirstCard(PrintStream out) {
@@ -102,6 +109,8 @@ public class UnoGame {
             nextPlayer.drawCard(deck.remove(deck.size() - 1));
             currentPlayerIndex = getNextCurrentPlayerIndex(currentPlayerIndex);
         }
+
+        // System.out.println("Deck size after place first is " + deck.size());
     }
 
 
@@ -135,6 +144,7 @@ public class UnoGame {
                 if (currentPlayer.getHandSize() == 0) {
                     winner = currentPlayer;
                     gameOver = true;
+                    reason = currentPlayer.getName() + " wins";
                     out.println("\n" + currentPlayer.getName() + " wins!");
                     break;
                 }
@@ -144,6 +154,7 @@ public class UnoGame {
                 if (deck.isEmpty()) {
                     out.println("Deck is empty! Game ends in a draw.");
                     gameOver = true;
+                    reason = currentPlayer.getName() + ", the deck is empty";
                     break;
                 }
                 Card drawnCard = deck.remove(deck.size() - 1);
@@ -167,6 +178,7 @@ public class UnoGame {
                     if (currentPlayer.getHandSize() == 0) {
                         winner = currentPlayer;
                         gameOver = true;
+                        reason = currentPlayer.getName() + " wins";
                         out.println("\n" + currentPlayer.getName() + " wins!");
                         break;
                     }
@@ -237,5 +249,17 @@ public class UnoGame {
 
     public int getRoundNumber() {
         return roundNumber;
+    }
+    public String getReason() {
+        return reason;
+    }
+    public int getRandomSeed() {
+        return randomSeed;
+    }
+    public Card getTopCard() {
+        return topCard;
+    }
+    public int getDeckSize() {
+        return deck.size();
     }
 }
