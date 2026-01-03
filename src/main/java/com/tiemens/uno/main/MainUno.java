@@ -5,6 +5,7 @@ import java.util.IntSummaryStatistics;
 import java.util.List;
 
 import com.tiemens.uno.model.UnoGame;
+import com.tiemens.uno.util.CheckSum;
 import com.tiemens.uno.util.StringBufferPrintStream;
 
 
@@ -108,9 +109,13 @@ public class MainUno {
            }
            randomSeed += addToSeed;
            out.clear();
+           if (i == 0) {
+               System.out.println(CheckSum.toStaticString());
+           }
         }
         System.out.println("Stats = " + mus);
         System.out.println(mus.dumpDetails());
+
 
         //System.out.println("SBPS.size=" + out.size());
         //out.clear();

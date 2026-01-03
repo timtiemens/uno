@@ -7,6 +7,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
+import com.tiemens.uno.util.CheckSum;
+import com.tiemens.uno.util.CheckSum.Keys;
 import com.tiemens.uno.util.StringBufferPrintStream;
 
 // Main game class
@@ -37,9 +39,13 @@ public class UnoGame {
         this.reason = "";
         initializePlayers();
         initializeDeck();
+        CheckSum.record(Keys.After_deck_init, deck);
         shuffleDeck();
+        CheckSum.record(Keys.After_shuffle, deck);
         dealCards();
+        CheckSum.record(Keys.After_deal, deck);
         placeFirstCard(out);
+        CheckSum.record(Keys.After_topCard_set, deck);
     }
 
     private void initializePlayers() {
@@ -125,7 +131,7 @@ public class UnoGame {
             out.println("\n" + currentPlayer.getName() + "'s turn, round " + roundNumber);
             out.println("Top card: " + topCard);
 
-            Card playedCard = currentPlayer.findPlayableCard(topCard, random);
+            Card playedCard = currentPlayer.findPlayableCard(topCard, random, out);
 
             if (playedCard != null) {
                 currentPlayer.removeCard(playedCard);
@@ -133,7 +139,7 @@ public class UnoGame {
 
                 // Handle wild cards
                 if (playedCard.isWild()) {
-                    Card.Color chosenColor = currentPlayer.chooseColor(random);
+                    Card.Color chosenColor = currentPlayer.chooseColor(random, out);
                     playedCard.setColor(chosenColor);
                     out.println(currentPlayer.getName() + " chooses " + chosenColor);
                 }
@@ -167,7 +173,7 @@ public class UnoGame {
 
                     // Handle wild cards
                     if (drawnCard.isWild()) {
-                        Card.Color chosenColor = currentPlayer.chooseColor(random);
+                        Card.Color chosenColor = currentPlayer.chooseColor(random, out);
                         drawnCard.setColor(chosenColor);
                         out.println(currentPlayer.getName() + " chooses " + chosenColor);
                     }

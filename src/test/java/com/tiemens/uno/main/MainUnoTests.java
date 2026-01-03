@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import com.tiemens.uno.model.Card;
 import com.tiemens.uno.model.UnoGame;
+import com.tiemens.uno.util.CheckSum;
 import com.tiemens.uno.util.StringBufferPrintStream;
 
 
@@ -18,10 +19,11 @@ class MainUnoTests {
 	void test42() {
         // initial random:
         int randomSeed = 42;
+
         Card LAST_CARD = null;
         LAST_CARD = new Card(Card.Color.BLUE, Card.Type.NUMBER, 7);
-        LAST_CARD = new Card(Card.Color.RED, Card.Type.NUMBER, 2);
-// ALT        LAST_CARD = new Card(Card.Color.GREEN, Card.Type.NUMBER, 0);
+// ALT2       LAST_CARD = new Card(Card.Color.RED, Card.Type.NUMBER, 2);
+// ALT1        LAST_CARD = new Card(Card.Color.GREEN, Card.Type.NUMBER, 0);
 
 
         StringBufferPrintStream out = StringBufferPrintStream.getPrintStream();
@@ -35,14 +37,22 @@ class MainUnoTests {
 
         game.playGame(out);
         mus.addStatsFromGame(game);
+        System.out.println(out.getString());
         System.out.println("MUS stats = " + mus.dumpDetails());
+        System.out.println(CheckSum.toStaticString());
 
         Assertions.assertNotNull(game.getWinner(), "game is null");
         Assertions.assertEquals(randomSeed, game.getRandomSeed());
-// ALT        Assertions.assertEquals(49, game.getDeckSize());
-// ALT        Assertions.assertEquals(59, game.getRoundNumber(), "wrong number of rounds");
-        Assertions.assertEquals(39, game.getDeckSize());
-        Assertions.assertEquals(68, game.getRoundNumber(), "wrong number of rounds");
+
+// ALT1        Assertions.assertEquals(49, game.getDeckSize());
+// ALT2        Assertions.assertEquals(39, game.getDeckSize());
+        Assertions.assertEquals(59, game.getDeckSize());
+
+// ALT1        Assertions.assertEquals(59, game.getRoundNumber(), "wrong number of rounds");
+// ALT2         Assertions.assertEquals(68, game.getRoundNumber(), "wrong number of rounds");
+        Assertions.assertEquals(42, game.getRoundNumber(), "wrong number of rounds");
+
+
         Assertions.assertEquals(LAST_CARD, game.getTopCard());
 
 	}

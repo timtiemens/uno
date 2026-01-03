@@ -10,7 +10,8 @@ import java.util.Objects;
 // Card class representing individual Uno cards
 public class Card {
     public enum Color {
-        RED, GREEN, BLUE, YELLOW, WILD
+        BLUE, GREEN, RED, YELLOW, WILD;
+
     }
 
     public enum Type {
