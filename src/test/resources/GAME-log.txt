@@ -1,0 +1,239 @@
+enter deal, deck size is 108
+Starting game with seed=42 and size=79 cards.
+Starting Uno Game
+First card: GREEN_1
+
+Player 1's turn, round 1
+Top card: GREEN_1
+Pick Card: There was a choice of playable cards, picked 2 out of 3
+Player 1 plays GREEN_5
+
+Player 2's turn, round 2
+Top card: GREEN_5
+Pick Card: There was a choice of playable cards, picked 1 out of 3
+Player 2 plays WILD_WILD
+Pick Color: Max color(YELLOW) was 3 all={YELLOW=3, GREEN=1, BLUE=2}
+Player 2 chooses YELLOW
+
+Player 3's turn, round 3
+Top card: YELLOW_WILD
+Player 3 draws a card
+
+Player 4's turn, round 4
+Top card: YELLOW_WILD
+Player 4 draws a card
+
+Player 1's turn, round 5
+Top card: YELLOW_WILD
+Player 1 plays YELLOW_REVERSE
+Direction reversed!
+
+Player 4's turn, round 6
+Top card: YELLOW_REVERSE
+Player 4 draws a card
+Player 4 plays drawn card: GREEN_REVERSE
+Direction reversed!
+
+Player 1's turn, round 7
+Top card: GREEN_REVERSE
+Pick Card: There was a choice of playable cards, picked 0 out of 2
+Player 1 plays GREEN_1
+
+Player 2's turn, round 8
+Top card: GREEN_1
+Player 2 plays GREEN_SKIP
+Next player is skipped!
+
+Player 4's turn, round 9
+Top card: GREEN_SKIP
+Pick Card: There was a choice of playable cards, picked 1 out of 2
+Player 4 plays GREEN_DRAW_TWO
+Player 1 draws 2 cards
+
+Player 2's turn, round 10
+Top card: GREEN_DRAW_TWO
+Player 2 draws a card
+Player 2 plays drawn card: GREEN_6
+
+Player 3's turn, round 11
+Top card: GREEN_6
+Player 3 draws a card
+
+Player 4's turn, round 12
+Top card: GREEN_6
+Player 4 plays GREEN_4
+
+Player 1's turn, round 13
+Top card: GREEN_4
+Pick Card: There was a choice of playable cards, picked 1 out of 2
+Player 1 plays WILD_WILD_DRAW_FOUR
+Pick Color: Max color(BLUE) was 2 all={GREEN=1, BLUE=2, RED=2}
+Player 1 chooses BLUE
+Player 2 draws 4 cards
+
+Player 3's turn, round 14
+Top card: BLUE_WILD_DRAW_FOUR
+Pick Card: There was a choice of playable cards, picked 0 out of 5
+Player 3 plays BLUE_4
+
+Player 4's turn, round 15
+Top card: BLUE_4
+Pick Card: There was a choice of playable cards, picked 2 out of 4
+Player 4 plays BLUE_0
+
+Player 1's turn, round 16
+Top card: BLUE_0
+Pick Card: There was a choice of playable cards, picked 0 out of 2
+Player 1 plays BLUE_3
+
+Player 2's turn, round 17
+Top card: BLUE_3
+Pick Card: There was a choice of playable cards, picked 1 out of 4
+Player 2 plays BLUE_SKIP
+Next player is skipped!
+
+Player 4's turn, round 18
+Top card: BLUE_SKIP
+Pick Card: There was a choice of playable cards, picked 0 out of 3
+Player 4 plays BLUE_5
+
+Player 1's turn, round 19
+Top card: BLUE_5
+Player 1 plays BLUE_6
+
+Player 2's turn, round 20
+Top card: BLUE_6
+Pick Card: There was a choice of playable cards, picked 0 out of 3
+Player 2 plays BLUE_9
+
+Player 3's turn, round 21
+Top card: BLUE_9
+Pick Card: There was a choice of playable cards, picked 3 out of 5
+Player 3 plays BLUE_2
+
+Player 4's turn, round 22
+Top card: BLUE_2
+Pick Card: There was a choice of playable cards, picked 0 out of 2
+Player 4 plays BLUE_5
+
+Player 1's turn, round 23
+Top card: BLUE_5
+Player 1 draws a card
+
+Player 2's turn, round 24
+Top card: BLUE_5
+Pick Card: There was a choice of playable cards, picked 2 out of 3
+Player 2 plays WILD_WILD
+Pick Color: Max color(YELLOW) was 4 all={YELLOW=4, GREEN=1, BLUE=1}
+Player 2 chooses YELLOW
+
+Player 3's turn, round 25
+Top card: YELLOW_WILD
+Player 3 plays YELLOW_8
+
+Player 4's turn, round 26
+Top card: YELLOW_8
+Player 4 draws a card
+
+Player 1's turn, round 27
+Top card: YELLOW_8
+Player 1 draws a card
+Player 1 plays drawn card: WILD_WILD
+Pick Color: Max color(RED) was 3 all={GREEN=1, RED=3}
+Player 1 chooses RED
+
+Player 2's turn, round 28
+Top card: RED_WILD
+Player 2 draws a card
+
+Player 3's turn, round 29
+Top card: RED_WILD
+Pick Card: There was a choice of playable cards, picked 1 out of 3
+Player 3 plays RED_4
+
+Player 4's turn, round 30
+Top card: RED_4
+Pick Card: There was a choice of playable cards, picked 0 out of 3
+Player 4 plays RED_DRAW_TWO
+Player 1 draws 2 cards
+
+Player 2's turn, round 31
+Top card: RED_DRAW_TWO
+Player 2 draws a card
+
+Player 3's turn, round 32
+Top card: RED_DRAW_TWO
+Pick Card: There was a choice of playable cards, picked 1 out of 2
+Player 3 plays RED_3
+
+Player 4's turn, round 33
+Top card: RED_3
+Pick Card: There was a choice of playable cards, picked 1 out of 2
+Player 4 plays RED_4
+
+Player 1's turn, round 34
+Top card: RED_4
+Pick Card: There was a choice of playable cards, picked 2 out of 5
+Player 1 plays GREEN_4
+
+Player 2's turn, round 35
+Top card: GREEN_4
+Pick Card: There was a choice of playable cards, picked 2 out of 4
+Player 2 plays GREEN_9
+
+Player 3's turn, round 36
+Top card: GREEN_9
+Pick Card: There was a choice of playable cards, picked 0 out of 2
+Player 3 plays RED_9
+
+Player 4's turn, round 37
+Top card: RED_9
+Player 4 plays RED_0
+
+Player 1's turn, round 38
+Top card: RED_0
+Pick Card: There was a choice of playable cards, picked 0 out of 3
+Player 1 plays RED_SKIP
+Next player is skipped!
+
+Player 3's turn, round 39
+Top card: RED_SKIP
+Player 3 draws a card
+Player 3 plays drawn card: GREEN_SKIP
+Next player is skipped!
+
+Player 1's turn, round 40
+Top card: GREEN_SKIP
+Player 1 draws a card
+Player 1 plays drawn card: BLUE_SKIP
+Next player is skipped!
+
+Player 3's turn, round 41
+Top card: BLUE_SKIP
+Pick Card: There was a choice of playable cards, picked 2 out of 3
+Player 3 plays BLUE_9
+
+Player 4's turn, round 42
+Top card: BLUE_9
+Player 4 plays BLUE_7
+
+Player 4 wins!
+
+MUS stats = Uno game statistics
+ Total=   1
+ Winner=  1
+ NoWinner=0
+  Winner rounds=[42]
+  Winner seeds =[42]
+  NoWinner rounds=[]
+  NoWinner seeds=[]
+  Winner min: 42
+  Winner max: 42
+  Winner avg: 42.0
+
+1_After_deck_init, 108, RED_0, RED_1, RED_1, RED_2, RED_2, RED_3, RED_3, RED_4, RED_4, RED_5, RED_5, RED_6, RED_6, RED_7, RED_7, RED_8, RED_8, RED_9, RED_9, RED_SKIP, RED_REVERSE, RED_DRAW_TWO, RED_SKIP, RED_REVERSE, RED_DRAW_TWO, GREEN_0, GREEN_1, GREEN_1, GREEN_2, GREEN_2, GREEN_3, GREEN_3, GREEN_4, GREEN_4, GREEN_5, GREEN_5, GREEN_6, GREEN_6, GREEN_7, GREEN_7, GREEN_8, GREEN_8, GREEN_9, GREEN_9, GREEN_SKIP, GREEN_REVERSE, GREEN_DRAW_TWO, GREEN_SKIP, GREEN_REVERSE, GREEN_DRAW_TWO, BLUE_0, BLUE_1, BLUE_1, BLUE_2, BLUE_2, BLUE_3, BLUE_3, BLUE_4, BLUE_4, BLUE_5, BLUE_5, BLUE_6, BLUE_6, BLUE_7, BLUE_7, BLUE_8, BLUE_8, BLUE_9, BLUE_9, BLUE_SKIP, BLUE_REVERSE, BLUE_DRAW_TWO, BLUE_SKIP, BLUE_REVERSE, BLUE_DRAW_TWO, YELLOW_0, YELLOW_1, YELLOW_1, YELLOW_2, YELLOW_2, YELLOW_3, YELLOW_3, YELLOW_4, YELLOW_4, YELLOW_5, YELLOW_5, YELLOW_6, YELLOW_6, YELLOW_7, YELLOW_7, YELLOW_8, YELLOW_8, YELLOW_9, YELLOW_9, YELLOW_SKIP, YELLOW_REVERSE, YELLOW_DRAW_TWO, YELLOW_SKIP, YELLOW_REVERSE, YELLOW_DRAW_TWO, WILD_WILD, WILD_WILD_DRAW_FOUR, WILD_WILD, WILD_WILD_DRAW_FOUR, WILD_WILD, WILD_WILD_DRAW_FOUR, WILD_WILD, WILD_WILD_DRAW_FOUR
+2_After_shuffle, 108, YELLOW_SKIP, GREEN_8, GREEN_6, RED_5, BLUE_2, YELLOW_8, GREEN_2, YELLOW_SKIP, RED_SKIP, YELLOW_3, BLUE_DRAW_TWO, YELLOW_2, RED_1, GREEN_7, YELLOW_7, WILD_WILD_DRAW_FOUR, YELLOW_2, RED_5, YELLOW_9, GREEN_8, BLUE_REVERSE, GREEN_9, RED_2, GREEN_DRAW_TWO, YELLOW_1, BLUE_8, YELLOW_DRAW_TWO, GREEN_REVERSE, YELLOW_3, YELLOW_6, BLUE_DRAW_TWO, WILD_WILD, YELLOW_5, RED_3, RED_7, RED_7, RED_DRAW_TWO, YELLOW_0, RED_9, RED_8, GREEN_2, RED_REVERSE, GREEN_5, YELLOW_6, GREEN_3, RED_8, BLUE_8, BLUE_1, WILD_WILD_DRAW_FOUR, RED_6, RED_1, BLUE_6, BLUE_3, YELLOW_9, WILD_WILD_DRAW_FOUR, GREEN_3, YELLOW_DRAW_TWO, BLUE_4, RED_2, BLUE_SKIP, GREEN_SKIP, GREEN_0, YELLOW_1, YELLOW_4, GREEN_9, WILD_WILD, RED_4, RED_REVERSE, WILD_WILD, BLUE_7, GREEN_7, YELLOW_REVERSE, YELLOW_8, GREEN_6, WILD_WILD_DRAW_FOUR, BLUE_6, GREEN_REVERSE, BLUE_7, BLUE_9, GREEN_1, GREEN_DRAW_TWO, RED_3, YELLOW_7, GREEN_5, GREEN_4, BLUE_2, YELLOW_5, GREEN_4, RED_0, BLUE_REVERSE, WILD_WILD, BLUE_3, BLUE_0, RED_4, BLUE_SKIP, RED_6, BLUE_5, BLUE_1, YELLOW_4, RED_SKIP, RED_DRAW_TWO, RED_9, GREEN_SKIP, GREEN_1, BLUE_5, BLUE_4, BLUE_9, YELLOW_REVERSE
+3_After_deal, 80, YELLOW_SKIP, GREEN_8, GREEN_6, RED_5, BLUE_2, YELLOW_8, GREEN_2, YELLOW_SKIP, RED_SKIP, YELLOW_3, BLUE_DRAW_TWO, YELLOW_2, RED_1, GREEN_7, YELLOW_7, WILD_WILD_DRAW_FOUR, YELLOW_2, RED_5, YELLOW_9, GREEN_8, BLUE_REVERSE, GREEN_9, RED_2, GREEN_DRAW_TWO, YELLOW_1, BLUE_8, YELLOW_DRAW_TWO, GREEN_REVERSE, YELLOW_3, YELLOW_6, BLUE_DRAW_TWO, WILD_WILD, YELLOW_5, RED_3, RED_7, RED_7, RED_DRAW_TWO, YELLOW_0, RED_9, RED_8, GREEN_2, RED_REVERSE, GREEN_5, YELLOW_6, GREEN_3, RED_8, BLUE_8, BLUE_1, WILD_WILD_DRAW_FOUR, RED_6, RED_1, BLUE_6, BLUE_3, YELLOW_9, WILD_WILD_DRAW_FOUR, GREEN_3, YELLOW_DRAW_TWO, BLUE_4, RED_2, BLUE_SKIP, GREEN_SKIP, GREEN_0, YELLOW_1, YELLOW_4, GREEN_9, WILD_WILD, RED_4, RED_REVERSE, WILD_WILD, BLUE_7, GREEN_7, YELLOW_REVERSE, YELLOW_8, GREEN_6, WILD_WILD_DRAW_FOUR, BLUE_6, GREEN_REVERSE, BLUE_7, BLUE_9, GREEN_1
+4_After_topCard_set, 79, YELLOW_SKIP, GREEN_8, GREEN_6, RED_5, BLUE_2, YELLOW_8, GREEN_2, YELLOW_SKIP, RED_SKIP, YELLOW_3, BLUE_DRAW_TWO, YELLOW_2, RED_1, GREEN_7, YELLOW_7, WILD_WILD_DRAW_FOUR, YELLOW_2, RED_5, YELLOW_9, GREEN_8, BLUE_REVERSE, GREEN_9, RED_2, GREEN_DRAW_TWO, YELLOW_1, BLUE_8, YELLOW_DRAW_TWO, GREEN_REVERSE, YELLOW_3, YELLOW_6, BLUE_DRAW_TWO, WILD_WILD, YELLOW_5, RED_3, RED_7, RED_7, RED_DRAW_TWO, YELLOW_0, RED_9, RED_8, GREEN_2, RED_REVERSE, GREEN_5, YELLOW_6, GREEN_3, RED_8, BLUE_8, BLUE_1, WILD_WILD_DRAW_FOUR, RED_6, RED_1, BLUE_6, BLUE_3, YELLOW_9, WILD_WILD_DRAW_FOUR, GREEN_3, YELLOW_DRAW_TWO, BLUE_4, RED_2, BLUE_SKIP, GREEN_SKIP, GREEN_0, YELLOW_1, YELLOW_4, GREEN_9, WILD_WILD, RED_4, RED_REVERSE, WILD_WILD, BLUE_7, GREEN_7, YELLOW_REVERSE, YELLOW_8, GREEN_6, WILD_WILD_DRAW_FOUR, BLUE_6, GREEN_REVERSE, BLUE_7, BLUE_9
+
+
